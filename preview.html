@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Try Your Luck</title>
+</head>
+<body style="text-align:center; font-family:sans-serif; margin-top:50px;">
+
+<h1>🎉 Try Your Luck!</h1>
+<button onclick="play()" style="padding:10px 20px; font-size:18px;">Try Now</button>
+
+<h2 id="result" style="margin-top:30px;"></h2>
+
+<script>
+function play() {
+  const results = [
+    "🎁 You Win!",
+    "🧢 You Got a Hat!",
+    "🔁 Try Again"
+  ];
+
+  const random = Math.floor(Math.random() * results.length);
+  document.getElementById("result").innerText = results[random];
+}
+</script>
+
+</body>
+</html>
